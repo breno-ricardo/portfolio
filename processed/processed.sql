@@ -1,4 +1,4 @@
--- I’m cleaning and preparing the table for future use. I start by inspecting the data, renaming columns for consistency, checking for null values, analyzing the table structure, and then standardizing the data types to ensure consistency and accuracy.
+-- Iâ€™m cleaning and preparing the table for future use. I start by inspecting the data, renaming columns for consistency, checking for null values, analyzing the table structure, and then standardizing the data types to ensure consistency and accuracy.
 
 -- I start by previewing the first 10 records from the [Store Sales] table in the dbo schema to get an initial sense of the data.
 SELECT TOP 10 *
@@ -24,7 +24,7 @@ SELECT
     SUM(CASE WHEN On_Promo IS NULL THEN 1 ELSE 0 END) AS On_Promo_Null
 FROM dbo.[Store Sales];
 
--- I examine the table’s metadata to understand the column names, data types, maximum lengths, and whether null values are allowed. This helps me plan any required structural changes to the table.
+-- I examine the tableâ€™s metadata to understand the column names, data types, maximum lengths, and whether null values are allowed. This helps me plan any required structural changes to the table.
 SELECT 
     COLUMN_NAME AS NomeColuna, 
     DATA_TYPE AS TipoDado, 
